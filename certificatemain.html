@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+          Certificate  Maker
+  </title>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="submitform.css">
+
+
+</head>
+<body>
+
+  <!-- navbar -->
+
+  <div class="fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <a class="navbar-brand" href="#"><img src="https://img.icons8.com/clouds/100/000000/certificate.png" height="50" width="50"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">ABOUT</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          CERTIFIATE
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Sports</a>
+          <a class="dropdown-item" href="#">Award</a>
+          <a class="dropdown-item" href="#">Attendence</a>
+          <a class="dropdown-item" href="#">Diploma</a>
+          
+          
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+</div><br><br>
+<br>
+
+<!-- welcome img-->
+
+<img src="Screenshot (44).png"  width="100%" height="580">
+<br><br>
+
+<!--home body-->
+
+<div class="container">
+
+<div class="row">
+
+<!--   Main list of certificates -->
+
+  <div class="col-sm-3">
+    <div style="border:2px; background-color:lightgray; border-radius:5px;">
+      <ul>
+        <li data-toggle="modal" data-target="#exampleModal" style="cursor:pointer;  color:blue;"><b>Awards         </b></li>
+        <li  data-toggle="modal" data-target="#exampleModal" style="cursor:pointer; color:blue;"><b>Diploma       </b></li>
+        <li  data-toggle="modal" data-target="#exampleModal" style="cursor:pointer; color:blue;"><b>Workshops     </b></a></li>
+        <li  data-toggle="modal" data-target="#exampleModal" style="cursor:pointer; color:blue;"><b>Appreciation  </b></li>
+        <li  data-toggle="modal" data-target="#exampleModal" style="cursor:pointer; color:blue;"><b>Recognition   </b> </li>        
+        <li  data-toggle="modal" data-target="#exampleModal" style="cursor:pointer; color:blue;"><b>Academics     </b>    </li>         
+        <li  data-toggle="modal" data-target="#exampleModal" style="cursor:pointer; color:blue;"><b> Sports       </b></a> </li>           
+       <!--  <li style="list-style: none;"><ol>
+            <li><a href="badminton1.html" > Badminton</a></li>
+          <li><a href="sc_6.html">Basketball</a></li>
+          <li><a href="cricket.html">Cricket</a></li>
+        <li><a href="football.html">Football</a></li>
+            <li><a href="sc_2.html" > KABADDI</a></li>
+            
+          </li>
+        </ol>        </li>    -->         
+        <li data-toggle="modal" data-target="#exampleModal" style="cursor:pointer; color:blue;"><b>Completion </b>  </li>          
+        <li data-toggle="modal" data-target="#exampleModal" style="cursor:pointer; color:blue;"><b>Birthday   </b>  </li>      
+        <li data-toggle="modal" data-target="#exampleModal" style="cursor:pointer; color:blue;"><b>Achievement</b></a> </li>                
+        <li data-toggle="modal" data-target="#exampleModal" style="cursor:pointer; color:blue;"><b>Attendance  </b></li>                    
+        <li data-toggle="modal" data-target="#exampleModal" style="cursor:pointer; color:blue;"><b>Participation</b></li>           
+      </ul>
+    </div>
+
+  <!-- <img src="success.jpg" height="229" width="230" data-toggle="modal" data-target="#exampleModal" > -->
+
+
+   <!-- Sign Up modal -->
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color:blue;">Sign Up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+         <div class="modal-body" style="height:450px">
+         
+        <div class="box">
+  <form name="signup" action="insert.php" method="post" >
+  <div class="inputBox">
+    <input type="text" name="name" required="">
+    <label>Name</label>
+  </div>
+    <!-- <div class="inputBox">
+    <input type="text" name="lname" required="">
+    <label>Last Name</label>
+  </div> -->
+    <div class="inputBox">
+    <input type="text" name="email" required="">
+    <label>Email</label>
+  </div>
+    <div class="inputBox">
+    <input type="text" name="pass1" required="">
+    <label>Password</label>
+  </div>
+  <div class="inputBox">
+    <input type="text" name="pass2" required="">
+    <label>Confirm Password</label>
+  </div>
+   <!--  <button type="button" class="btn btn-primary" onclick="return signupform()">Submit</button> -->
+   <input type="submit" value="Register">
+  </form>
+  </div>
+      </div>
+
+      <div  style="text-align: center;">
+        <hr>
+        <h6 > <a data-toggle="modal" data-target="#login" href="#login" onclick=" false exampleModal">Already have an account</a> </h6>
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+    
+    <!-- home -->
+  <div class="col-sm-9">
+    <h1 id="home" style="display: inline-block;
+          margin: 0 auto;
+          font-family: “Roboto Slab”;
+          font-size:50;
+          background: linear-gradient(150deg, skyblue 0%, red 25%, skyblue 50%, orange 75% ,blue 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;">
+  <b>HOME</b>
+</h1>
+      <p>
+      
+<b>Create certificates for every award under the sun with Canva’s free drag and drop certificate maker.</b><br>
+
+      </p>Design certificates your awardees will be proud to show off<br>
+Give people the recognition they deserve with a professionally-designed certificate from Canva. Whether you’re awarding an employee for their loyalty and service or acknowledging a speaker who has imparted their expertise during a talk, give them a beautifully designed certificate to remember.
+<br>
+With Canva’s wide selection of templates and easy-to-use drag and drop design tools, you can come up with the certificate you need in minutes, no design experience needed! Add high quality images and illustrations, choose from over a hundred fonts and customize colors in a few clicks.
+<br>
+
+
+<h1 id="about" style="display: inline-block;
+          margin: 0 auto;
+          font-family: “Roboto Slab”;
+          font-size:50;
+          background: linear-gradient(150deg, skyblue 0%, red 25%, skyblue 50%, orange 75% ,blue 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;">
+  <b>ABOUT</b>
+</h1>
+      <p>
+          
+      </p>
+  </div>
+
+
+</div>
+</div>
+
+  <!--  modal for login  -->
+
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="login">Log in</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="height: 250px;">
+        <div class="box">
+  <form method="post" action="">
+  <div class="inputBox">
+    <input type="text" name="" required="">
+    <label>Username</label>
+  </div>
+    <div class="inputBox">
+    <input type="" name="" required="">
+    <label>Password</label>
+  </div>
+  <input type="submit" name="" value="SUBMIT">
+  </form>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Log in</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+         
+
+
+</body>
+</html>
